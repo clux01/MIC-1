@@ -5,7 +5,6 @@
 
 
  <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/Electronic-and-Computer-Engineering/mic-1-hdl.git"><strong>Prevoius Project »</strong></a>
     <br />
