@@ -1,0 +1,8 @@
+# pack-refs with: peeled fully-peeled sorted 
+92b4d9b79ec1d77fc0c21db1d2225aaa4755f13f refs/remotes/origin/alu_rework
+72417e3309ce60201bcc54fccbbf52916bb29e83 refs/remotes/origin/leo-ps2
+31b332369950afdad30cc241c255f110587390d6 refs/remotes/origin/main
+47905908b8feeba134f1f63f3f118829c3789fde refs/remotes/origin/shifter2
+31b332369950afdad30cc241c255f110587390d6 refs/remotes/origin/top-level-basys3-port
+8d9fbf6187974d3c3e9c72ea08c3137c7463dcc3 refs/remotes/origin/top-level-basys3_v3
+632b7b618000fc2650b4d015175c84957c8eeb2f refs/remotes/origin/top-level-basys3_v4
