@@ -7,7 +7,7 @@ Modification of a prevois project using a MIC-1
     <a href="https://github.com/Electronic-and-Computer-Engineering/mic-1-hdl.git"><strong> Project »</strong></a>
     <br />
 
-#Introduction
+# Introduction
 
 This repository contains the work of a study project at the FH Joanneum.
 
