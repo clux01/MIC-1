@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Nov 30 10:13:02 2022
+# Process ID: 20752
+# Current directory: C:/Users/faizs/OneDrive - FH JOANNEUM/Projekt/IP_CORES/MUX_DEMUX_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11036 C:\Users\faizs\OneDrive - FH JOANNEUM\Projekt\IP_CORES\MUX_DEMUX_IP\tmp_edit_project.xpr
+# Log file: C:/Users/faizs/OneDrive - FH JOANNEUM/Projekt/IP_CORES/MUX_DEMUX_IP/vivado.log
+# Journal file: C:/Users/faizs/OneDrive - FH JOANNEUM/Projekt/IP_CORES/MUX_DEMUX_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/faizs/OneDrive - FH JOANNEUM/Projekt/IP_CORES/MUX_DEMUX_IP/tmp_edit_project.xpr}
+INFO: [Project 1-313] Project file moved from 'c:/users/andrg/desktop/fh/5. semester/ece project/uart/mux_demux_ip' since last save.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/../../Users/andrG/AppData/Roaming/Xilinx/ip_repo', nor could it be found using path 'c:/Users/andrG/AppData/Roaming/Xilinx/ip_repo'.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/faizs/OneDrive - FH JOANNEUM/Projekt/IP_CORES/MUX_DEMUX_IP/tmp_edit_project.gen/sources_1', nor could it be found using path 'c:/users/andrg/desktop/fh/5. semester/ece project/uart/mux_demux_ip/tmp_edit_project.gen/sources_1'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableResourceEstimation
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name SimCompileState
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name LocalIPRepoLeafDirName
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/../../Users/andrG/Desktop/FH/5. Semester/ECE Project/UART/MUX_DEMUX_IP/src/MUX_DEMUX.v', nor could it be found using path 'c:/Users/andrG/Desktop/FH/5. Semester/ECE Project/UART/MUX_DEMUX_IP/src/MUX_DEMUX.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/../../Users/andrG/Desktop/FH/5. Semester/ECE Project/UART/MUX_DEMUX_IP/component.xml', nor could it be found using path 'c:/Users/andrG/Desktop/FH/5. Semester/ECE Project/UART/MUX_DEMUX_IP/component.xml'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2022) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2022) not recognized by Vivado. 
+
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.2. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+WARNING: [Project 1-231] Project 'tmp_edit_project.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/faizs/OneDrive - FH JOANNEUM/Projekt/IP_CORES/MUX_DEMUX_IP/Users/andrG/AppData/Roaming/Xilinx/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 1125.473 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 30 10:20:41 2022...
