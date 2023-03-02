@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1674658173">
+  <File Type="ROUTE-PWR" Name="mic1_basys3_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mic1_basys3.tcl"/>
+  <File Type="BITSTR-MMI" Name="mic1_basys3.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mic1_basys3_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="mic1_basys3_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="mic1_basys3_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mic1_basys3_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="mic1_basys3_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="mic1_basys3_opt.dcp"/>
+  <File Type="OPT-DRC" Name="mic1_basys3_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mic1_basys3.hwdef"/>
+  <File Type="PWROPT-DCP" Name="mic1_basys3_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mic1_basys3_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mic1_basys3_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mic1_basys3_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mic1_basys3_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mic1_basys3_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mic1_basys3_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mic1_basys3_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mic1_basys3_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mic1_basys3_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mic1_basys3_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="mic1_basys3.bin"/>
+  <File Type="PLACE-TIMING" Name="mic1_basys3_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mic1_basys3_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="mic1_basys3.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mic1_basys3_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mic1_basys3_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mic1_basys3_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="mic1_basys3.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="mic1_basys3_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mic1_basys3_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mic1_basys3_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mic1_basys3_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="mic1_basys3_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mic1_basys3_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mic1_basys3_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mic1_basys3_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mic1_basys3_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mic1_basys3_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mic1_basys3_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mic1_basys3_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mic1_basys3_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mic1_basys3_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mic1_basys3_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mic1_basys3_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mic1_basys3_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mic1_basys3_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mic1_basys3_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mic1_basys3_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mic1_basys3_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mic1_basys3_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mic1_basys3_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mic1_basys3_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mic1_basys3_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mic1_basys3_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mic1_basys3_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="mic1_basys3.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mic1_basys3_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mic1_basys3_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="mic1_basys3.nky"/>
+  <File Type="BITSTR-BMM" Name="mic1_basys3_bd.bmm"/>
+  <File Type="PDI-FILE" Name="mic1_basys3.pdi"/>
+  <File Type="RCFI_FILE" Name="mic1_basys3.rcfi"/>
+  <File Type="CFI_FILE" Name="mic1_basys3.cfi"/>
+  <File Type="RNPI_FILE" Name="mic1_basys3.rnpi"/>
+  <File Type="NPI_FILE" Name="mic1_basys3.npi"/>
+  <File Type="RBD_FILE" Name="mic1_basys3.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mic1_basys3.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="mic1_basys3.sysdef"/>
+  <File Type="BG-BGN" Name="mic1_basys3.bgn"/>
+  <File Type="BG-DRC" Name="mic1_basys3.drc"/>
+  <File Type="RDI-RDI" Name="mic1_basys3.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="mic1_basys3_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="mic1_basys3_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/IP006_uart_reg32_0_1/IP006_uart_reg32_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/VGA_0_2/VGA_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/vio_0_1/vio_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/MUX_DEMUX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../MUX_DEMUX_IP/src/MUX_DEMUX.v"/>
+        <Attr Name="ImportTime" Val="1669116065"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../alu/rtl/alu.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../control-store/rtl/control_store.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../util/rtl/debouncer.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../util/rtl/edge_detection.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/main_memory.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../main-memory/rtl/main_memory.sv"/>
+        <Attr Name="ImportTime" Val="1644763396"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/memory_manager.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/rtl/mic1.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/rtl/mic1_soc.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../shifter/rtl/shifter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../util/rtl/synchronizer.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/rtl/uart_baud.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/rtl/uart_rx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../uart/rtl/uart_tx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/rtl/defines_add.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/rtl/mic1_basys3.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/IP006_uart_reg32_0_1.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/VGA_0_2.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ila_0.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/vio_0_1.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/rtl/clk_wiz_100_to_6MHz.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../microcode.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../add.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Unief/Erasmus/Courses/ECE Project/VGA_Final_IPCore/VGA_Final_IPCore.srcs/sources_1/new/static_mems.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Unief/Erasmus/Courses/ECE Project/VGA_Final_IPCore/VGA_Final_IPCore.srcs/sources_1/new/character.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../Unief/Erasmus/Courses/ECE Project/VGA_Final_IPCore/VGA_Final_IPCore.srcs/sources_1/new/data_to_address.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/VGA_1_1.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/VGA_1_1/VGA_1.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mic1_basys3"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constrs_1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constrs_1.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

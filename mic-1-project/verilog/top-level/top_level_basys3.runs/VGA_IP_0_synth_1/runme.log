@@ -1,0 +1,510 @@
+
+*** Running vivado
+    with args -log VGA_IP_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_IP_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source VGA_IP_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/emile/OneDrive/Unief/Erasmus/Courses/Users/faizs/Desktop/IPCORE_UART_MUX'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/IPCORE_UART_MUX/src/UART_GUI_IP006_uart_reg32_0_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/3_ip_core_32bit'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/emile/OneDrive/Unief/Erasmus/Courses/Users/faizs/Desktop/3_ip_core_32bit'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/emile/Downloads/VGA_IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:VGA_IP:1.0'. The one found in IP location 'c:/Users/emile/Downloads/VGA_IP_Core' will take precedence over the same IP in location c:/Users/emile/Downloads/VGA_IP_Core/VGA_IP_Core
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: VGA_IP_0
+Command: synth_design -top VGA_IP_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24492
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1215.090 ; gain = 407.785
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/synth/VGA_IP_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP.v:12]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_AsciiCharsMem_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_AsciiCharsMem_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'AsciiCharsMem' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:3]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'chars.mem'; please make sure the file is added to project and has read permission, ignoring [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'AsciiCharsMem' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_AsciiCharsMem_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_AsciiCharsMem_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress7bit_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress7bit_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'DataToAddress7bit' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/DataToAddress7bit.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'data_to_address.mem'; please make sure the file is added to project and has read permission, ignoring [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/DataToAddress7bit.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'DataToAddress7bit' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/DataToAddress7bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress7bit_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress7bit_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'DataToAddress' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/DataToAddress.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'data_to_address.mem'; please make sure the file is added to project and has read permission, ignoring [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/DataToAddress.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'DataToAddress' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/DataToAddress.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_1_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_1_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_2_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_2_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_3_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_3_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_3_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_3_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_4_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_4_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_4_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_4_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_5_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_5_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_5_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_5_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_6_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_6_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_6_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_6_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_7_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_7_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_7_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_7_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_8_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_8_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_8_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_8_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_DataToAddress_9_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_9_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_DataToAddress_9_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_DataToAddress_9_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_Debounce_Switch_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_Debounce_Switch_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Debounce_Switch' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/Debounce_Switch.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce_Switch' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/Debounce_Switch.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_Debounce_Switch_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_Debounce_Switch_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_ScreenBufferMem_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_ScreenBufferMem_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ScreenBufferMem' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/ScreenBufferMem.v:3]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'static_mems.mem'; please make sure the file is added to project and has read permission, ignoring [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/ScreenBufferMem.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ScreenBufferMem' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/ScreenBufferMem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_ScreenBufferMem_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_ScreenBufferMem_0_0.v:53]
+WARNING: [Synth 8-7071] port 'oDataB' of module 'VGA_IP_ScreenBufferMem_0_0' is unconnected for instance 'ScreenBufferMem_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP.v:174]
+WARNING: [Synth 8-7023] instance 'ScreenBufferMem_0' of module 'VGA_IP_ScreenBufferMem_0_0' has 7 connections declared, but only 6 given [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP.v:174]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_VGA_Pattern_1_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_VGA_Pattern_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Pattern' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_Pattern.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Pattern' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_Pattern.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_VGA_Pattern_1_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_VGA_Pattern_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_VGA_Timings_1_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_VGA_Timings_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Timings' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_Timings.v:23]
+INFO: [Synth 8-6157] synthesizing module 'H_Counter' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/H_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'H_Counter' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/H_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'V_Counter' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/V_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'V_Counter' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/V_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Timings' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_Timings.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_VGA_Timings_1_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_VGA_Timings_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_clk_wiz_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_clk_wiz_0_0_clk_wiz' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71326]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:79852]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_clk_wiz_0_0_clk_wiz' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_clk_wiz_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0.v:68]
+INFO: [Synth 8-6157] synthesizing module 'VGA_IP_num_capture_4bit_0_0' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_num_capture_4bit_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'num_capture_4bit' [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/num_capture_4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'num_capture_4bit' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/num_capture_4bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_num_capture_4bit_0_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_num_capture_4bit_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_IP_0' (0#1) [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/synth/VGA_IP_0.v:53]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+WARNING: [Synth 8-3848] Net rMem in module/entity AsciiCharsMem does not have driver. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/AsciiCharsMem.v:14]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-7129] Port iClk in module VGA_Pattern is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iRst in module VGA_Pattern is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1338.273 ; gain = 530.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1338.273 ; gain = 530.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1338.273 ; gain = 530.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1340.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0_board.xdc] for cell 'inst/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0_board.xdc] for cell 'inst/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0.xdc] for cell 'inst/clk_wiz_0/inst'
+WARNING: [Constraints 18-619] A clock with name 'iClk' already exists, overwriting the previous clock with the same name. [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0.xdc:56]
+Finished Parsing XDC File [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0.xdc] for cell 'inst/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/VGA_IP_0/src/VGA_IP_clk_wiz_0_0/VGA_IP_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_IP_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_IP_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_IP_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_IP_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1402.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1402.684 ; gain = 0.027
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz_0/inst. (constraint file  {C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/dont_touch.xdc}, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  {C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/dont_touch.xdc}, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rFSM_Curr_reg' in module 'num_capture_4bit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sInit |                  000000000000010 |                            00000
+                   sIdle |                  000000000000001 |                            00001
+                 sToggle |                  000100000000000 |                            01101
+                sUpdate0 |                  001000000000000 |                            00010
+                sUpdate1 |                  000001000000000 |                            00011
+                sUpdate2 |                  000010000000000 |                            00100
+                sUpdate3 |                  000000100000000 |                            00101
+                sUpdate4 |                  000000001000000 |                            00110
+                sUpdate5 |                  000000000010000 |                            00111
+                sUpdate6 |                  000000000100000 |                            01000
+                sUpdate7 |                  000000000000100 |                            01001
+                sUpdate8 |                  000000000001000 |                            01010
+                sUpdate9 |                  100000000000000 |                            01011
+               sUpdate10 |                  010000000000000 |                            01100
+                    sRst |                  000000010000000 |                            01110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rFSM_Curr_reg' using encoding 'one-hot' in module 'num_capture_4bit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                6 Bit    Registers := 82    
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               7K Bit	(600 X 12 bit)          RAMs := 1     
++---Muxes : 
+	  15 Input   15 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 16    
+	   7 Input   12 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 22    
+	  15 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 14    
+	  11 Input   10 Bit        Muxes := 1     
+	  15 Input   10 Bit        Muxes := 1     
+	  15 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 21    
+	  21 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 10    
+	  15 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[14]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[13]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[12]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[11]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[10]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[9]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[8]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[7]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[6]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[5]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[4]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[3]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[2]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[1]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_rFSM_Curr_reg[0]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[14]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[13]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[12]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[11]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[10]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[9]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[8]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[7]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[6]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[5]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[4]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[3]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[2]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[1]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_wFSM_Next_reg[0]) is unused and will be removed from module VGA_IP_num_capture_4bit_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'iClk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |LUT1       |     2|
+|3     |LUT2       |     4|
+|4     |LUT3       |     5|
+|5     |LUT4       |     6|
+|6     |LUT5       |    10|
+|7     |LUT6       |    11|
+|8     |MMCME2_ADV |     1|
+|9     |FDRE       |    21|
+|10    |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 1402.684 ; gain = 530.969
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1402.684 ; gain = 595.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1402.684 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1402.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 56615c79
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 114 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint 'C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/VGA_IP_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/emile/OneDrive/Unief/Erasmus/Courses/ECE Project/files/mic-1-project/verilog/top-level/top_level_basys3.runs/VGA_IP_0_synth_1/VGA_IP_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_IP_0_utilization_synth.rpt -pb VGA_IP_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 12 15:57:45 2023...
