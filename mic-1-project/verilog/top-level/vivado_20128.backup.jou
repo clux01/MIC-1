@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov 17 16:34:08 2022
+# Process ID: 20128
+# Current directory: C:/Projekt/files/mic-1-project/verilog/top-level
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1124 C:\Projekt\files\mic-1-project\verilog\top-level\top_level_basys3.xpr
+# Log file: C:/Projekt/files/mic-1-project/verilog/top-level/vivado.log
+# Journal file: C:/Projekt/files/mic-1-project/verilog/top-level\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Joanneum/5. Semester/IECP/schematic_top_level_memory_manager.pdf
+create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0
+generate_target {instantiation_template} [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci]
+catch { config_ip_cache -export [get_ips -all vio_0] }
+export_ip_user_files -of_objects [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci]
+launch_runs vio_0_synth_1
+wait_on_run vio_0_synth_1
+export_simulation -of_objects [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci] -directory C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.ip_user_files/sim_scripts -ip_user_files_dir C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.ip_user_files -ipstatic_source_dir C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/modelsim} {questa=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/questa} {riviera=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/riviera} {activehdl=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset vio_0 c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci
+create_bd_design "design_1"
+update_compile_order -fileset sources_1

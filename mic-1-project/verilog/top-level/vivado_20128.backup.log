@@ -1,0 +1,174 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov 17 16:34:08 2022
+# Process ID: 20128
+# Current directory: C:/Projekt/files/mic-1-project/verilog/top-level
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1124 C:\Projekt\files\mic-1-project\verilog\top-level\top_level_basys3.xpr
+# Log file: C:/Projekt/files/mic-1-project/verilog/top-level/vivado.log
+# Journal file: C:/Projekt/files/mic-1-project/verilog/top-level\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Joanneum/5. Semester/IECP/files/mic-1-project/verilog/top-level' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1441.668 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+[Thu Nov 17 16:35:29 2022] Launched synth_1...
+Run output will be captured here: C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Nov 17 16:41:07 2022] Launched impl_1...
+Run output will be captured here: C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.runs/impl_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: mic1_basys3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1488.113 ; gain = 46.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mic1_basys3' [C:/Projekt/files/mic-1-project/verilog/top-level/rtl/mic1_basys3.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_100_to_6MHz' [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_100_to_6MHz_clk_wiz' [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51657]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:51657]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59963]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 38.250000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 127.500000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59963]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_100_to_6MHz_clk_wiz' (4#1) [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_100_to_6MHz' (5#1) [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [C:/Projekt/files/mic-1-project/verilog/util/rtl/synchronizer.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (6#1) [C:/Projekt/files/mic-1-project/verilog/util/rtl/synchronizer.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Projekt/files/mic-1-project/verilog/util/rtl/debouncer.sv:1]
+	Parameter MAX_COUNT bound to: 511 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (7#1) [C:/Projekt/files/mic-1-project/verilog/util/rtl/debouncer.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'edge_detection' [C:/Projekt/files/mic-1-project/verilog/util/rtl/edge_detection.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detection' (8#1) [C:/Projekt/files/mic-1-project/verilog/util/rtl/edge_detection.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mic1_soc' [C:/Projekt/files/mic-1-project/verilog/top-level/rtl/mic1_soc.sv:3]
+	Parameter STACKPOINTER_ADDRESS bound to: 91 - type: integer 
+	Parameter LOCALVARIABLEFRAME_ADDRESS bound to: 75 - type: integer 
+	Parameter CONSTANTPOOL_ADDRESS bound to: 72 - type: integer 
+	Parameter MIC1_PROGRAM bound to: add.mem - type: string 
+	Parameter MIC1_MICROCODE bound to: microcode.mem - type: string 
+	Parameter MEMORY_SIZE bound to: 139 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mic1' [C:/Projekt/files/mic-1-project/verilog/top-level/rtl/mic1.sv:3]
+	Parameter STACKPOINTER_ADDRESS bound to: 91 - type: integer 
+	Parameter LOCALVARIABLEFRAME_ADDRESS bound to: 75 - type: integer 
+	Parameter CONSTANTPOOL_ADDRESS bound to: 72 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Projekt/files/mic-1-project/verilog/alu/rtl/alu.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [C:/Projekt/files/mic-1-project/verilog/alu/rtl/alu.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Projekt/files/mic-1-project/verilog/shifter/rtl/shifter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (10#1) [C:/Projekt/files/mic-1-project/verilog/shifter/rtl/shifter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'mic1' (11#1) [C:/Projekt/files/mic-1-project/verilog/top-level/rtl/mic1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_baud' [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_baud.sv:11]
+	Parameter CNT_W bound to: 24 - type: integer 
+	Parameter CNT_INC bound to: 24'b000001101000110110111001 
+INFO: [Synth 8-6155] done synthesizing module 'uart_baud' (12#1) [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_baud.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_rx.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (13#1) [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_rx.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_tx.sv:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_tx.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (14#1) [C:/Projekt/files/mic-1-project/verilog/uart/rtl/uart_tx.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'control_store' [C:/Projekt/files/mic-1-project/verilog/control-store/rtl/control_store.sv:3]
+	Parameter INIT_F bound to: microcode.mem - type: string 
+INFO: [Synth 8-251] Loading microprogram microcode.mem into control_store. [C:/Projekt/files/mic-1-project/verilog/control-store/rtl/control_store.sv:16]
+INFO: [Synth 8-3876] $readmem data file 'microcode.mem' is read successfully [C:/Projekt/files/mic-1-project/verilog/control-store/rtl/control_store.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'control_store' (15#1) [C:/Projekt/files/mic-1-project/verilog/control-store/rtl/control_store.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'main_memory' [C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/imports/rtl/main_memory.sv:3]
+	Parameter INIT_F bound to: add.mem - type: string 
+	Parameter MEMORY_SIZE bound to: 139 - type: integer 
+INFO: [Synth 8-251] Loading program add.mem into main_memory. [C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/imports/rtl/main_memory.sv:18]
+INFO: [Synth 8-3876] $readmem data file 'add.mem' is read successfully [C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/imports/rtl/main_memory.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'main_memory' (16#1) [C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/imports/rtl/main_memory.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'memory_manager' [C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/new/memory_manager.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'memory_manager' (17#1) [C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/new/memory_manager.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'mic1_soc' (18#1) [C:/Projekt/files/mic-1-project/verilog/top-level/rtl/mic1_soc.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'mic1_basys3' (19#1) [C:/Projekt/files/mic-1-project/verilog/top-level/rtl/mic1_basys3.sv:5]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1538.250 ; gain = 96.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1538.250 ; gain = 96.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1538.250 ; gain = 96.582
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1538.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz_board.xdc] for cell 'clk_100to6/inst'
+Finished Parsing XDC File [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz_board.xdc] for cell 'clk_100to6/inst'
+Parsing XDC File [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz.xdc] for cell 'clk_100to6/inst'
+Finished Parsing XDC File [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz.xdc] for cell 'clk_100to6/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Projekt/files/mic-1-project/verilog/top-level/clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mic1_basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mic1_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Projekt/files/mic-1-project/verilog/top-level/basys3_const.xdc]
+Finished Parsing XDC File [C:/Projekt/files/mic-1-project/verilog/top-level/basys3_const.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1660.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 1793.094 ; gain = 351.426
+50 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:29 . Memory (MB): peak = 1793.094 ; gain = 351.426
+write_schematic -format pdf -orientation portrait C:/Joanneum/5. Semester/IECP/schematic_top_level_memory_manager.pdf
+ERROR: [Common 17-165] Too many positional options when parsing 'Semester/IECP/schematic_top_level_memory_manager.pdf', please type 'write_schematic -help' for usage info.
+create_ip -name vio -vendor xilinx.com -library ip -version 3.0 -module_name vio_0
+INFO: [filemgmt 56-101] Creating core container 'c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0.xcix' for IP 'vio_0'
+generate_target {instantiation_template} [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'vio_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'vio_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'vio_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'vio_0'...
+catch { config_ip_cache -export [get_ips -all vio_0] }
+export_ip_user_files -of_objects [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci]
+launch_runs vio_0_synth_1
+[Fri Nov 18 11:05:19 2022] Launched vio_0_synth_1...
+Run output will be captured here: C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.runs/vio_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci] -directory C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.ip_user_files/sim_scripts -ip_user_files_dir C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.ip_user_files -ipstatic_source_dir C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/modelsim} {questa=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/questa} {riviera=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/riviera} {activehdl=C:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset vio_0 c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci
+INFO: [Project 1-386] Moving file 'c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0/vio_0.xci' from fileset 'vio_0' to fileset 'sources_1'.
+INFO: [Project 1-386] Moving file 'c:/Projekt/files/mic-1-project/verilog/top-level/top_level_basys3.srcs/sources_1/ip/vio_0.xcix' from fileset 'vio_0' to fileset 'sources_1'.
+create_bd_design "design_1"
+Wrote  : <C:\Projekt\files\mic-1-project\verilog\top-level\top_level_basys3.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.613 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 18 11:56:29 2022...
