@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Nov  2 19:19:36 2022
+# Process ID: 16872
+# Current directory: C:/Joanneum/5. Semester/IECP/files/mic-1-project/verilog/main-memory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19172 C:\Joanneum\5. Semester\IECP\files\mic-1-project\verilog\main-memory\main-memory.xpr
+# Log file: C:/Joanneum/5. Semester/IECP/files/mic-1-project/verilog/main-memory/vivado.log
+# Journal file: C:/Joanneum/5. Semester/IECP/files/mic-1-project/verilog/main-memory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Joanneum/5. Semester/IECP/files/mic-1-project/verilog/main-memory/main-memory.xpr}
+update_compile_order -fileset sources_1
