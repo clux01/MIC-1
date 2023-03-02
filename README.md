@@ -25,4 +25,17 @@ It is tested for the Basys-3 board.
 | Team member      | Faiz Sehic         |
 | Team member      | Andreas Greiner    |
 
+  # GUI
   
+  The Gui is defined in the python script guinew.py
+  To use that the python extension has to be installed in the Visual Studio Code.
+  Also to run the script the serial extension of pyton has to be installed
+```
+-m pip install --upgrade pip   
+```
+```
+pip3 install pyserial
+```
+```
+pip install --upgrade pip
+```
