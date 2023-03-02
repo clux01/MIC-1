@@ -1,0 +1,3 @@
+clk_wiz_100_to_6MHz_clk_wiz.v,verilog,xil_defaultlib,../../../../clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz_clk_wiz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../../clk_wiz_100_to_6MHz"
+clk_wiz_100_to_6MHz.v,verilog,xil_defaultlib,../../../../clk_wiz_100_to_6MHz/clk_wiz_100_to_6MHz.v,incdir="$ref_dir/../../../ipstatic"incdir="../../../../clk_wiz_100_to_6MHz"
+glbl.v,Verilog,xil_defaultlib,glbl.v
