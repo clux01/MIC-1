@@ -1,0 +1,88 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "gen_directory": "../../../../top_level_basys3.gen/sources_1/bd/design_2"
+    },
+    "design_tree": {
+      "mic_wrapper_0": ""
+    },
+    "components": {
+      "mic_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:mic_wrapper:1.0",
+        "xci_name": "design_2_mic_wrapper_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mic_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "resetn",
+                "value_src": "constant"
+              }
+            }
+          },
+          "resetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "sel_uart": {
+            "direction": "I"
+          },
+          "w_adress": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "w_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "w_en": {
+            "direction": "I"
+          },
+          "r_en": {
+            "direction": "I"
+          },
+          "ser_tx": {
+            "direction": "O"
+          },
+          "ser_rx": {
+            "direction": "I"
+          },
+          "r_data": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        },
+        "xci_path": "ip/design_2_mic_wrapper_0_0/design_2_mic_wrapper_0_0.xci"
+      }
+    }
+  }
+}
