@@ -33,6 +33,8 @@ It is tested for the Basys-3 board.
 ```
 pip3 install pyserial
 ```
- # mic-1-project/
+
+# Repository
+ ## mic-1-project/
  This directory contains the working project and working files.
  A more detailed descriptionn can be found in the linked repository.
