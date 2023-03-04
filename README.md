@@ -27,7 +27,7 @@ It is tested for the Basys-3 board.
 
   # GUI
   
-  The Gui is defined in the python script guinew.py
+  The Gui is defined in the python script **guinew.py**
   To use that the python extension has to be installed in the Visual Studio Code.
   Also to run the script the serial extension of pyton has to be installed
 ```
