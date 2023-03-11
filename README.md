@@ -37,4 +37,4 @@ pip3 install pyserial
 # Repository
  ## mic-1-project/
  This directory contains the working project and working files.
- A more detailed descriptionn can be found in the linked repository.
+ A more detailed description can be found in the linked repository.
